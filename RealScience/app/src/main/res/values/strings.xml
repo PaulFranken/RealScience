@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RealScience</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_planets">PlanetsActivity</string>
+    <string name="planetsExplanation">Planets have many interesting properties, which need math to be calculated! \nClick on them to see the formula.</string>
+    <string name="planetsProperties">A planet has the follow properties: </string>
+    <string name="earth">Earth for example has: \na diameter of 12,742km \nA circumference of 40,075km \nA mass of 5.972^24kg and A\ndensity of 5.514g/cm3 </string>
+    <string name="title_activity_planet_creator">PlanetCreatorActivity</string>
+    <string-array name="planetTypesArray">
+        <item>Terrestrial</item>
+        <item>Gas Giant</item>
+        <item>Star</item>
+        <item>Asteroid</item>
+
+    </string-array>
+    <string name="title_activity_planet_showcase">PlanetShowcaseActivity</string>
+
+</resources>

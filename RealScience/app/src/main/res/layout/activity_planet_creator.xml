@@ -1,0 +1,364 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#003153"
+    tools:context="com.example.paulfranken.realscience.PlanetCreatorActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Circumference: "
+        android:id="@+id/textView9"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Type: "
+        android:id="@+id/textView8"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Planet name: "
+        android:id="@+id/textView10"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_alignStart="@+id/spinner" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Examples: "
+        android:id="@+id/textView11"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Circumf."
+        android:id="@+id/textView12"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/textView11"
+        android:layout_alignEnd="@+id/textView10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Type"
+        android:id="@+id/textView13"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignStart="@+id/textView16"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Earth"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ff00a709" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="40.000"
+        android:id="@+id/textView15"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/textView12"
+        android:textColor="#ff00a709" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Terrestrial"
+        android:id="@+id/textView16"
+        android:textColor="#ff00a709"
+        android:layout_marginLeft="50dp"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Jupiter"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffe34739" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="449.200"
+        android:id="@+id/textView18"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_alignStart="@+id/textView15"
+        android:textColor="#ffe34739" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Gas Giant"
+        android:id="@+id/textView19"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_alignStart="@+id/textView16"
+        android:textColor="#ffe34739" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Sun"
+        android:id="@+id/textView20"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffe801" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="4.000.000"
+        android:id="@+id/textView21"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_alignStart="@+id/textView18"
+        android:textColor="#ffffe801" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Star"
+        android:id="@+id/textView22"
+        android:layout_alignBottom="@+id/textView21"
+        android:layout_alignStart="@+id/textView19"
+        android:textColor="#ffffe801" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ceres"
+        android:id="@+id/textView23"
+        android:layout_below="@+id/textView20"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffa0a0a0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="2.992"
+        android:id="@+id/textView24"
+        android:layout_alignBottom="@+id/textView23"
+        android:layout_alignStart="@+id/textView21"
+        android:textColor="#ffa0a0a0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Asteroid"
+        android:id="@+id/textView25"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_alignStart="@+id/textView22"
+        android:textColor="#ffa0a0a0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="UY Scuti"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffff1300" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="4.634.497.448"
+        android:id="@+id/textView27"
+        android:layout_alignTop="@+id/textView26"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_toStartOf="@+id/textView25"
+        android:textColor="#ffff1300" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Star"
+        android:id="@+id/textView28"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignStart="@+id/textView25"
+        android:textColor="#ffff1300" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Make your own planet to see its properties"
+        android:id="@+id/CreatorTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Density: "
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_alignBottom="@+id/textView29"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:textColor="#ffffff"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Misc."
+        android:id="@+id/textView30"
+        android:layout_above="@+id/textView14"
+        android:layout_toEndOf="@+id/textView16"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Density: 5.51"
+        android:id="@+id/textView31"
+        android:layout_above="@+id/textView17"
+        android:layout_alignStart="@+id/textView30"
+        android:textColor="#ff00a709" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Density: 1.33"
+        android:id="@+id/textView32"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/textView31"
+        android:textColor="#ffe34739" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1 solar mass"
+        android:id="@+id/textView33"
+        android:layout_above="@+id/textView23"
+        android:layout_alignStart="@+id/textView32"
+        android:textColor="#ffffe801" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Density: 2.08"
+        android:id="@+id/textView34"
+        android:layout_above="@+id/textView26"
+        android:layout_alignStart="@+id/textView33"
+        android:textColor="#ffa0a0a0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="7-10 solar mass"
+        android:id="@+id/textView35"
+        android:layout_alignTop="@+id/textView28"
+        android:layout_alignStart="@+id/textView34"
+        android:textColor="#ffff1300" />
+
+</RelativeLayout>
